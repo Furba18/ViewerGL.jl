@@ -63,7 +63,7 @@ end
 """
 	disableVertexArray(array::GLVertexArray)
 
-Each attribute can be enabled or disabled for array access. 
+Each attribute can be enabled or disabled for array access.
 """
 function disableVertexArray(array::GLVertexArray)
 

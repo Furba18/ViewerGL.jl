@@ -35,7 +35,7 @@ function releaseGpuResources(shader::GLShader)
 	global __release_gpu_resources__
 
 	if shader.vertex_shader_id>=0
-		id=shader.vertex_shader_id
+	 	id=shader.vertex_shader_id
 		shader.vertex_shader_id=-1
 		glDeleteLater(function()  glDeleteShader(id) end)
 	end
@@ -121,7 +121,7 @@ function enableProgram(shader)
 		status = GLint[0]
 		glGetProgramiv(shader.program_id, GL_LINK_STATUS, status)
 		if status[1] == GL_FALSE
-			maxlength = 8192
+		 	maxlength = 8192
 			buffer = zeros(GLchar, maxlength)
 			sizei = GLsizei[0]
 			glGetProgramInfoLog(shader.program_id, maxlength, sizei, buffer)

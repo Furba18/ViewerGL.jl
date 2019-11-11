@@ -2,7 +2,7 @@
 
 # simple vertex shader (GLSL source) for simple graphics pipeline
 
-vert_source="""
+const vert_source="""
 
 #define LIGHTING_ENABLED        arg(LIGHTING_ENABLED)
 #define COLOR_ATTRIBUTE_ENABLED arg(COLOR_ATTRIBUTE_ENABLED)
@@ -55,7 +55,7 @@ void main()
 
 # simple fragment shader (GLSL source) for simple graphics pipeline
 
-frag_source="""
+const frag_source="""
 
 #define LIGHTING_ENABLED        arg(LIGHTING_ENABLED)
 #define COLOR_ATTRIBUTE_ENABLED arg(COLOR_ATTRIBUTE_ENABLED)
